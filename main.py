@@ -1,8 +1,6 @@
-from cellSegmentation.logger import logging
-from cellSegmentation.exception import CustomException 
+from cellSegmentation.pipeline.training_pipeline import TrainPipeline
 
-try:
-    a = 1/0 
-    print(a)
-except Exception as e:
-    logging.info(e)
+obj = TrainPipeline()
+
+obj.run_pipeline()
+
